@@ -36,6 +36,15 @@
         h1 {
             text-align: center;
         }
+
+        .enlace-github {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            text-decoration: underline;
+            color: blue;
+        }
+
     </style>
     <link rel="icon" href="images/icono.ico" type="image/x-icon">
     <title>Webs</title>
@@ -108,7 +117,24 @@
             </a>
         </div>
 
+        <div class="carta">
+            <a href="https://wuwa.incin.net/map">
+                <img src="https://wuwa.incin.net/logo.png" alt="Imagen">
+                <h1>Mapa WuWa</h1>
+            </a>
+        </div>
+
+        
     </div>
+
+    <a href="https://github.com/Alegp/Enlaces" class="enlace-github">Github</a>
+
+    <script>
+        document.querySelectorAll('a').forEach(enlace => {
+            enlace.setAttribute('target', '_blank');
+            enlace.setAttribute('rel', 'noopener noreferrer');
+        });
+    </script>
 </body>
 </html>
 
